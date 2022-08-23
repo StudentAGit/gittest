@@ -1,0 +1,261 @@
+@media  screen and (max-width:767px){
+    
+    body
+    {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .logo
+    {
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .logo img
+    {
+        
+        width: 180px;
+        align-self: center;
+        padding: 7% 0 7% 0;
+    }
+
+    .place
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(232, 232, 232);
+        
+    }
+
+    .place i
+    {
+        margin-right: 4%;
+        font-size: larger;
+    }
+
+    .place p
+    {
+        font-size: larger;
+        font-weight: 700;
+    }
+    .presentation
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244, 244, 244);
+        padding: 0 3% 0 3%;
+        
+    }
+
+    .presentation p
+    {
+        font-size: larger;
+    }
+
+    main
+    {
+        margin-bottom: 6%;
+    }
+    main h2
+    {
+        font-size: 30px;
+    }
+
+    .presentation h2, .presentation p
+    {
+        text-align: center;
+    }
+    main p
+    {
+        font-size: 20px;
+    }
+    
+    
+    .presentation a
+    {
+        margin-bottom: 5%;
+    }
+    .buttonexplore
+    {
+        margin: 5% 10% 10% 10%;
+        border-radius: 30px;
+        padding: 7%;
+        color: white;
+        border: none;
+        background-color: #9356DC;
+        width: 170px;
+        
+        
+    }
+
+    .fonctioning
+    {
+        padding-bottom: 10%;
+    }
+    .fonctioningtitle h2, .restaurant h2
+    {
+        margin-left: 3% ;
+    }
+
+    .fonctioninglist
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  
+
+    .options
+    {   border: 2px solid gray;
+        border-radius: 20px ;
+        padding: 2%;
+        margin-bottom: 7%;
+        width: 290px;
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        align-items: center;
+    }
+
+    .number 
+    {
+        background-color:#9356DC;
+        color: white;
+        border-radius: 50%;
+        height: 30px ;
+        width: 30px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .options i
+    {
+        
+        color: rgb(99, 99, 99);
+        padding: 0 3% 0 8%;
+        
+    }
+    .options h3
+    {
+        padding-left: 2%;
+        margin: 4%;
+        font-size: medium;
+        
+    }
+    
+    .restaurant
+    {
+        background: rgb(247, 247, 247);
+
+    }
+
+    .restaurant h2
+    {
+        padding-top: 10%;
+    }
+
+    .restaurantlist
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .restaurantcard
+    {
+        width: 350px;
+        height: 300px;
+        box-shadow: 0px 8px 10px; 
+        border-radius: 20px;
+        margin-bottom: 10%;
+        
+    }
+
+    .restaurantcard img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .restaurantcard .caption
+    {
+        height: 30%;
+    }
+
+    .caption h3, .caption p
+    {
+        margin: 0%;
+    }
+
+    .caption
+    {
+        padding: 3% 0 0 3%;
+        font-size: larger;
+    }
+
+    .like i
+    {
+        display: flex;
+        justify-content: end;
+        margin-right: 15px;
+        margin-top: -45px;
+    }
+
+    .caption h3
+    {
+        margin-bottom: 2%;
+    }
+
+
+    footer h3
+    {
+        width: 95px;
+        padding: 5% 0 0 4%;
+        color: white;
+        font-family:'Shrikhand', cursive; 
+        margin: 0;
+        
+    }
+
+    
+    footer 
+    {   color: white;
+        background-color: rgb(57, 57, 57);
+    }
+
+    ul
+    {
+        margin: 0;
+        padding: 5%;
+        list-style-type: none;
+    }
+
+    ul i
+    {
+        padding-right: 2%;
+    }
+
+    li
+    {
+        margin-bottom: 1%;
+    }
+
+
+
+
+
+
+
+
+
+}   
+
+    
