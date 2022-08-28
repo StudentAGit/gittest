@@ -1,5 +1,3 @@
-@media  screen and (max-width:767px){
-    
     body
     {
         margin: 0;
@@ -19,7 +17,7 @@
         
         width: 180px;
         align-self: center;
-        padding: 7% 0 7% 0;
+        padding: 5% 0 5% 0;
     }
 
     .place
@@ -42,6 +40,16 @@
         font-size: larger;
         font-weight: 700;
     }
+
+    main
+    {
+        margin-bottom: 6%;
+    }
+    main h2
+    {
+        font-size: 30px;
+    }
+
     .presentation
     {
         display: flex;
@@ -56,31 +64,19 @@
     .presentation p
     {
         font-size: larger;
-    }
-
-    main
-    {
-        margin-bottom: 6%;
-    }
-    main h2
-    {
-        font-size: 30px;
+        
     }
 
     .presentation h2, .presentation p
     {
         text-align: center;
     }
-    main p
-    {
-        font-size: 20px;
-    }
-    
-    
+
     .presentation a
     {
         margin-bottom: 5%;
     }
+
     .buttonexplore
     {
         margin: 5% 10% 10% 10%;
@@ -90,8 +86,6 @@
         border: none;
         background-color: #9356DC;
         width: 170px;
-        
-        
     }
 
     .fonctioning
@@ -112,15 +106,15 @@
     
   
 
-    .options
-    {   border: 2px solid gray;
-        border-radius: 20px ;
-        padding: 2%;
-        margin-bottom: 7%;
-        width: 290px;
-        background-color: rgb(247, 247, 247);
+    .fonctioningchoices
+    {   
         display: flex;
         align-items: center;
+        border-radius: 20px;
+        background-color: rgb(247, 247, 247);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin-bottom: 7%;
+        width: 290px;
     }
 
     .number 
@@ -128,23 +122,27 @@
         background-color:#9356DC;
         color: white;
         border-radius: 50%;
-        height: 30px ;
-        width: 30px ;
+        height: 25px;
+        width: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: -15px;
     }
-    .options i
+
+
+    .fonctioningchoices i
     {
         
         color: rgb(99, 99, 99);
-        padding: 0 3% 0 8%;
+        padding: 0 4% 0 6%;
         
     }
-    .options h3
+
+    .fonctioningchoices h3
     {
-        padding-left: 2%;
-        margin: 4%;
+        padding: 3% 3% 3% 2%;
+        
         font-size: medium;
         
     }
@@ -171,18 +169,35 @@
     {
         width: 350px;
         height: 300px;
-        box-shadow: 0px 8px 10px; 
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         border-radius: 20px;
         margin-bottom: 10%;
         
     }
 
+    .restaurantlink
+    {
+        text-decoration: none;
+        color: black;
+    }
     .restaurantcard img
     {
         object-fit: cover;
         width: 100%;
         height: 70%;
         border-radius: 20px 20px 0 0;
+    }
+
+    .new
+    {
+        color: rgb(57, 118, 57);
+        background-color: rgb(169, 224, 209);
+        position: absolute;
+        padding: 2%;
+        font-weight: bolder;
+        margin-left: 68%;
+        margin-top: -53%;
+        
     }
 
     .restaurantcard .caption
@@ -206,7 +221,8 @@
         display: flex;
         justify-content: end;
         margin-right: 15px;
-        margin-top: -45px;
+        margin-top: -50px;
+        font-size: 25px;
     }
 
     .caption h3
@@ -256,6 +272,6 @@
 
 
 
-}   
+
 
     

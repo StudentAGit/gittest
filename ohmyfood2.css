@@ -1,0 +1,68 @@
+body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.backandlogo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.backandlogo img
+{
+    width: 180px;
+    padding: 5% 0 5% 5%;
+    
+}
+
+.backandlogo a
+{
+    position: absolute;
+    margin-left: -83%;
+}
+.backandlogo i
+{
+    font-size: 23px
+}
+footer h3
+{
+    width: 95px;
+    padding: 5% 0 0 4%;
+    color: white;
+    font-family:'Shrikhand', cursive; 
+    margin: 0;
+    
+}
+
+
+footer 
+{   color: white;
+    background-color: rgb(57, 57, 57);
+}
+
+ul
+{
+    margin: 0;
+    padding: 5%;
+    list-style-type: none;
+}
+
+ul i
+{
+    padding-right: 2%;
+}
+
+li
+{
+    margin-bottom: 1%;
+}
