@@ -34,6 +34,14 @@ body a
 {
     font-size: 23px
 }
+
+
+.backgroundimage img
+{
+    width:100%;
+    object-fit: cover;
+}
+
 footer h3
 {
     width: 95px;
