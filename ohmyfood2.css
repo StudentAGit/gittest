@@ -42,6 +42,89 @@ body a
     object-fit: cover;
 }
 
+.menu
+{
+    border-radius: 15% 15% 0 0;
+    position: relative;
+    background-color: rgb(244, 244, 244);
+}
+
+.menulist
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menulistitle
+{
+    padding-left: 3%;
+    border-bottom:#99E2D0 3px solid;
+    width: 10%;
+    padding-bottom: 1%;
+}
+
+.menutitle
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%
+}
+
+.menutitle h2
+{
+   font-family: 'Shrikhand', cursive; 
+}
+.menutitle i
+{
+    padding: 6% 7% 0 0;
+    font-size: 30px;
+}
+
+.starters
+{
+    margin-bottom: 5%;
+}
+
+.starterscontainer, .maindishescontainer, .dessertscontainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin:  3%;
+    padding: 3%;
+}
+
+.menulist h3, p
+{
+    margin: 0;
+}
+.menulist .price
+{
+    padding: 6% 4% 0 0;
+}
+
+.command
+{
+    display: flex;
+    justify-content: center;
+}
+.buttoncommand
+{
+        margin: 5% 10% 10% 10%;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        padding: 4%;
+        color: white;
+        border: none;
+        background-color: #9356DC;
+        width: 200px;
+        text-align: center;
+}
+
+
+
+
 footer h3
 {
     width: 95px;
@@ -56,6 +139,7 @@ footer h3
 footer 
 {   color: white;
     background-color: rgb(57, 57, 57);
+    
 }
 
 ul
