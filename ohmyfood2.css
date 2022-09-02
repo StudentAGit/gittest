@@ -130,13 +130,13 @@ body a
 }
 .buttoncommand
 {
-    margin: 5% 10% 13% 10%;
+    margin: 5% 10% 20% 10%;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 4%;
     color: white;
     border: none;
-    background-color: #9356DC;
+    background: linear-gradient(to top left, #9356DC, #FF79DA);
     width: 200px;
     text-align: center;
 }
@@ -168,6 +168,10 @@ ul
     list-style-type: none;
 }
 
+footer a
+{
+    color: white;
+}
 ul i
 {
     padding-right: 2%;
