@@ -1,122 +1,186 @@
-    body
-    {
+    body {
         margin: 0;
         font-family: 'Roboto', sans-serif;
     }
 
-    body a
-    {
+    body a {
         text-decoration: none;
     }
-    
-    .loading
-    {
-        width: 100%;
-        height: 100%;
-    }
 
-
-    header
-    { 
+    .loadingspinner {
         display: flex;
         justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        align-items: center;
+        background-color: white;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        animation: finish 4s;
+        animation-fill-mode: both;
+       
+
+    }
+
+    .loader {
+        position: absolute;
+        border: 16px solid #99E2D0;
+        border-bottom-color: #9356DC;
+        border-top-color: #FF79DA;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: loading 3s linear;
+        animation-fill-mode: both;
+
+    }
+
+    @keyframes finish
+    {
+        100%{
+            visibility: collapse; 
+        }
         
     }
 
-    header img
-    {
+    @keyframes loading {
+        0% {
+            transform: rotate(0deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #9356DC;
+        }
+
+        25% {
+
+            transform: rotate(90deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #9356DC;
+        }
+
+        50% {
+            transform: rotate(180deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #9356DC;
+        }
+
+        75% {
+            transform: rotate(270deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #9356DC;
+        }
+
+        99.9% {
+            transform: rotate(360deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #9356DC;
+
+        }
+
+        100% {
+            opacity: 0;
+            
+        }
+    }
+
+
+
+    header {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    header img {
         width: 180px;
         align-self: center;
         padding: 5% 0 5% 0;
     }
 
-    .place
-    {
+    .place {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: rgb(232, 232, 232);
-        
+
     }
 
-    .place i
-    {
+    .place i {
         margin-right: 4%;
         font-size: larger;
     }
 
-    .place p
-    {
+    .place p {
         font-size: larger;
         font-weight: 700;
     }
 
-    main h2
-    {
-        font-size: 30px;
+    main h2 {
+        font-size: 23px;
     }
 
-    .presentation
-    {
+    .presentation {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: rgb(244, 244, 244);
         padding: 0 3% 6% 3%;
-        
+
     }
 
-    .presentation p
-    {
+    .presentation p {
         font-size: larger;
-        
+
     }
 
-    .presentation h2, .presentation p
+    .presentation h2
     {
         text-align: center;
+        padding: 10% 15% 0 15%;
+        margin: 0%;
     }
 
-    .presentation a
-    {
-        margin-bottom: 5%;
+    .presentation p {
+        text-align: center;
+        padding: 0 2% 0 2%;
+        
     }
 
-    .buttonexplore
-    {
-        background: linear-gradient(to top left, #9356DC, #FF79DA);
+    .presentation a {
+        margin: 5% 0 5% 0;
+        
+    }
+
+    .buttonexplore {
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         margin: 5% 10% 10% 10%;
         border-radius: 30px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        padding: 6%;
+        padding: 5%;
         color: white;
         border: none;
         text-align: center;
-        
+
     }
 
-    .fonctioning
-    {
+    .fonctioning {
         padding-bottom: 10%;
     }
-    .fonctioningtitle h2, .restaurants h2
-    {
-        padding-left: 6% ;
+
+    .fonctioningtitle h2,
+    .restaurants h2 {
+        padding-left: 6%;
     }
 
-    .fonctioninglist
-    {
+    .fonctioninglist {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-  
 
-    .fonctioningchoices
-    {   
+
+
+    .fonctioningchoices {
         display: flex;
         align-items: center;
         border-radius: 20px;
@@ -127,16 +191,15 @@
         transition: .3s;
     }
 
-    .fonctioningchoices:hover
-    {
+    .fonctioningchoices:hover {
         background-color: rgb(255, 239, 239);
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 30px 0px;
         cursor: pointer;
         transform: scale(1.1);
     }
-    .number 
-    {
-        background-color:#9356DC;
+
+    .number {
+        background-color: #9356DC;
         color: white;
         border-radius: 50%;
         height: 25px;
@@ -148,43 +211,37 @@
     }
 
 
-    .fonctioningchoices i
-    {
+    .fonctioningchoices i {
         color: rgb(99, 99, 99);
         padding: 0 4% 0 6%;
     }
 
-    
 
-    .fonctioningchoices h3
-    {
+
+    .fonctioningchoices h3 {
         padding: 3% 3% 3% 2%;
-        
         font-size: medium;
-        
+
     }
-    
-    .restaurants
-    {
+
+    .restaurants {
         background: rgb(247, 247, 247);
 
     }
 
-    .restaurants h2
-    {
+    .restaurants h2 {
         padding-top: 10%;
     }
 
-    .restaurantlist
-    {
+    .restaurantlist {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-bottom: 12%;
     }
-    .restaurantcard
-    {
+
+    .restaurantcard {
         width: 350px;
         height: 300px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -192,23 +249,22 @@
         margin-bottom: 6%;
         position: relative;
         background-color: white;
+        
     }
 
-    .restaurantlink
-    {
+    .restaurantlink {
         text-decoration: none;
         color: black;
     }
-    .restaurantcard img
-    {
+
+    .restaurantcard img {
         object-fit: cover;
         width: 100%;
         height: 70%;
         border-radius: 20px 20px 0 0;
     }
 
-    .new
-    {
+    .new {
         color: #198269;
         background-color: #99E2D0;
         position: absolute;
@@ -216,27 +272,24 @@
         font-weight: bolder;
         margin-left: 74%;
         margin-top: -53%;
-        
+
     }
 
-    .restaurantcard .caption
-    {
+    .restaurantcard .caption {
         height: 30%;
     }
 
-    .caption h3, .caption p
-    {
+    .caption h3,
+    .caption p {
         margin: 0%;
     }
 
-    .caption
-    {
+    .caption {
         padding: 3% 0 0 3%;
         font-size: larger;
     }
 
-    .like i
-    {
+    .like i {
         display: flex;
         justify-content: end;
         margin-right: 15px;
@@ -244,58 +297,43 @@
         font-size: 25px;
     }
 
-    .caption h3
-    {
+    .caption h3 {
         margin-bottom: 2%;
     }
 
 
-    footer h3
-    {
+    footer h3 {
         width: 95px;
         padding: 5% 0 0 4%;
         color: white;
-        font-family:'Shrikhand', cursive; 
+        font-family: 'Shrikhand', cursive;
         margin: 0;
-        
+
     }
 
-    
-    footer 
-    {   color: white;
+
+    footer {
+        color: white;
         background-color: rgb(57, 57, 57);
     }
 
-    ul
-    {
+    ul {
         margin: 0;
         padding: 5%;
         list-style-type: none;
     }
-    
-    footer a
-    {
+
+    footer a {
         color: white;
     }
- 
-    ul i
-    {
+
+    ul i {
         padding-right: 2%;
     }
 
-    li
-    {
+    li {
         margin-bottom: 1%;
     }
-
-
-
-
-
-
-
-
-
 
 
     

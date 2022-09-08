@@ -1,102 +1,96 @@
-body
-{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body a
-{
+body a {
     text-decoration: none;
     color: black;
 }
 
-.backandlogo
-{
+.backandlogo {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.backandlogo img
-{
+.backandlogo img {
     width: 180px;
     padding: 5% 0 5% 5%;
-    
+
 }
 
-.backandlogo a
-{
+.backandlogo a {
     position: absolute;
     margin-left: -83%;
 }
-.backandlogo i
-{
+
+.backandlogo i {
     font-size: 23px
 }
 
 
-.backgroundimage img
-{
+.backgroundimage img {
     width: 100%;
     object-fit: cover;
     height: 285px;
 }
 
-.menu
-{
+.menu {
     border-radius: 30px 30px 0 0;
     position: relative;
     background-color: rgb(244, 244, 244);
     margin-top: -15%;
-    
+
 }
 
-.menulist
-{
+.menulist {
     font-family: 'Roboto', sans-serif;
-    padding: 0 4% 0 4% ;
+    padding: 0 4% 0 4%;
 }
 
-.menulistitle
-{
-    border-bottom:#99E2D0 4px solid;
+.menulistitle {
+    border-bottom: #99E2D0 4px solid;
     width: 15%;
-    padding-bottom: 1%;
-    
+    padding-bottom: 2%;
+
 }
 
-.menutitle
-{
+.menutitle {
     display: flex;
     justify-content: space-between;
     padding: 5%
 }
 
-.menutitle h2
-{
-   font-family: 'Shrikhand', cursive; 
+.menutitle h2 {
+    font-family: 'Shrikhand', cursive;
 }
-.menutitle i
-{
+
+.menutitle i {
     padding: 6% 7% 0 0;
     font-size: 30px;
 }
 
-.starterstitle,.maintitle, .dessertitle, .texthidden
-{
+.starterstitle,
+.maintitle,
+.dessertitle,
+.texthidden {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
 }
-.starters, .maindishes, .desserts
-{
+
+.starters,
+.maindishes,
+.desserts {
     padding: 5% 0 5% 0;
 }
 
-.starterscontainer, .maindishescontainer, .dessertscontainer
-{
+.starterscontainer,
+.maindishescontainer,
+.dessertscontainer {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -109,40 +103,37 @@ body a
 
 
 
-.starterstitle, .maintitle, .dessertitle
-{
+.starterstitle,
+.maintitle,
+.dessertitle {
     padding-top: 2%;
 }
 
-.menulist h3
-{
+.menulist h3 {
     margin: 0;
     padding-bottom: 2%;
     font-size: 17px;
-    
+
 }
 
-.menulist p
-{
+.menulist p {
     margin: 0;
     font-size: 16px;
     padding-right: 6%;
 }
 
-.price
-{
+.price {
     padding: 11% 5% 0 0;
     font-size: 15px;
 }
 
-.command
-{
+.command {
     display: flex;
     justify-content: center;
-    background-color:rgb(244, 244, 244); 
+    background-color: rgb(244, 244, 244);
 }
-.buttoncommand
-{
+
+.buttoncommand {
     margin: 5% 10% 23% 10%;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -152,45 +143,132 @@ body a
     background: linear-gradient(to top left, #9356DC, #FF79DA);
     width: 200px;
     text-align: center;
+    align-self: center;
 }
 
 
 
 
-footer h3
-{
+footer h3 {
     width: 95px;
     padding: 5% 0 0 4%;
     color: white;
-    font-family:'Shrikhand', cursive; 
+    font-family: 'Shrikhand', cursive;
     margin: 0;
-    
+
 }
 
 
-footer 
-{   color: white;
+footer {
+    color: white;
     background-color: rgb(57, 57, 57);
-    
+
 }
 
-ul
-{
+ul {
     margin: 0;
     padding: 5%;
     list-style-type: none;
 }
 
-footer a
-{
+footer a {
     color: white;
 }
-ul i
-{
+
+ul i {
     padding-right: 2%;
 }
 
-li
-{
+li {
     margin-bottom: 1%;
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        height: 70px;
+       
+    }
+
+    .backandlogo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .backandlogo img {
+        margin: 0;
+        padding: 0;
+        
+
+
+    }
+
+    .backandlogo a {
+        margin-right: 10%;
+    }
+
+
+    .menu {
+        margin-top: -2%;
+    }
+
+    .menutitle {
+        padding: 2%;
+    }
+
+    .menutitle i {
+        padding-top: 2%;
+    }
+
+    
+    .menulist h3.menulistitle {
+        border-bottom: #99E2D0 4px solid;
+        width: 4%;
+        padding-bottom: 0;
+        
+    }
+
+    .menulist p
+    {
+        padding-top: 2%;
+    }
+
+
+    .starters,
+    .maindishes,
+    .desserts {
+        padding: 2% 0 2% 0;
+    }
+
+
+    .starterscontainer,
+    .maindishescontainer,
+    .dessertscontainer {
+        height: 50px;
+    }
+
+    .starterstitle,
+    .maintitle,
+    .dessertitle,
+    .texthidden {
+        overflow: initial;
+        white-space: initial;
+        text-overflow: initial;
+        padding-top: 0;
+
+    }
+
+    .price
+    {
+        padding-top: 3%;
+    }
+   
+    .buttoncommand
+    {
+        padding: 2%;
+    }
+
 }
