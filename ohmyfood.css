@@ -15,8 +15,10 @@
         opacity: 0.9;
         width: 100%;
         height: 100%;
+        z-index: 10;
         position: fixed;
-        animation: finish 4s;
+        animation: finish 2.9s;
+        animation-delay: 2.5s;
         animation-fill-mode: both;
        
 
@@ -37,8 +39,14 @@
 
     @keyframes finish
     {
+        0%
+        {
+           opacity: 100%;
+        }
+        
         100%{
-            visibility: collapse; 
+            opacity: 0%;
+            visibility: hidden;
         }
         
     }
@@ -87,6 +95,7 @@
     header {
         display: flex;
         justify-content: center;
+        box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
 
     }
 
@@ -188,13 +197,13 @@
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         margin-bottom: 7%;
         width: 290px;
-        transition: .3s;
+        cursor: pointer;
+        transition: .2s;
     }
 
     .fonctioningchoices:hover {
         background-color: rgb(255, 239, 239);
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 30px 0px;
-        cursor: pointer;
         transform: scale(1.1);
     }
 
@@ -335,5 +344,200 @@
         margin-bottom: 1%;
     }
 
+    /*Version desktop*/
+    @media screen and (min-width: 992px)
+    {
+        header 
+        {
+            height: 70px;
+            box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
+        }
 
+        .place
+        {
+            height: 80px;
+        }
+        .place i
+        {
+            margin-right: 1%
+        }
+        .presentation
+        {
+            height: 330px;
+        }
+
+        .presentation p
+        {
+            padding-top: 1%;
+        }
+        
+        .presentation a
+        {
+            margin: 4% 0 4% 0;
+        }
+        .buttonexplore
+        {
+            padding: 2%;
+            width: 200px;
+        }
+
+        .buttonexplore:hover
+        {
+            background: linear-gradient(to bottom right, #ff8ddf, #a071da);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 15px 8px, rgba(0, 0, 0, 0.23) 0px 10px 4px;
+            transition: .4s;
+        }
+        .fonctioning
+        {
+            padding-bottom: 0;
+            
+        }
+        .fonctioninglist
+        {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+       
+        .restaurants h2,.fonctioningtitle h2
+        {
+            padding: 3% 0 2% 3%;
+        }
+        
+        .restaurantlist
+        {
+           
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 8%;
+        }
     
+        .restaurantcard
+        {
+            width: 280px;
+            height: 250px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .restaurantcard:hover
+        {
+            transform: scale(1.1);
+        }
+    
+        .new
+        {
+            margin-bottom: 60%;
+            margin-left: 70%;
+        }
+    
+        .caption
+        {
+            font-size: initial;
+        }
+    
+        footer h3
+        {
+            padding-top: 3%;
+            font-size: x-large;
+        }
+        ul
+        {
+            padding: 2%;
+        }  
+    }
+
+    /*Version tablette*/
+    @media  screen and (min-width:768px) and (max-width: 991px) 
+    {
+        
+        header
+        {
+            height: 90px;
+            box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
+        }
+        .place
+        {
+            height: 75px;
+        }
+        .place i
+        {
+            margin-right: 2%
+        }
+
+        .presentation
+        {
+            padding: 0 3% 0 3%;
+        }
+
+        .presentation h2
+        {
+            padding-top: 9%;
+        }
+        .buttonexplore
+        {
+            padding: 3%;
+        }
+        .presentation a
+        {
+            margin: 4% 0 9% 0;
+
+        }
+        .fonctioningtitle h2
+        {
+            margin: 0;
+            padding: 5% 0 2% 4%;
+            font-size: x-large;
+
+        }
+        .fonctioning
+        {
+            padding-bottom: 0;
+        }
+
+        .fonctioningchoices
+        {
+            width: 350px;
+        }
+
+        .fonctioningchoices h3
+        {
+            padding-left: 4%;
+        }
+        .fonctioningchoices i
+        {
+            padding-left: 13%;
+        }
+        .restaurants h2
+        {
+            padding: 5% 0 2% 4%;
+            font-size: x-large;
+        }
+        .restaurantlist
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 5%;
+        }
+        .restaurantcard
+        {
+            margin-bottom: 10%;
+        }
+
+        footer h3
+        {
+            padding: 3% 0 0 4%;
+            font-size: x-large;
+        }
+        
+        ul
+        {
+            padding: 3%;
+            font-size: larger;
+        }
+
+
+
+    }
+

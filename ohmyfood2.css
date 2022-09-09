@@ -183,11 +183,11 @@ li {
     margin-bottom: 1%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 
     header {
         height: 70px;
-       
+
     }
 
     .backandlogo {
@@ -201,7 +201,7 @@ li {
     .backandlogo img {
         margin: 0;
         padding: 0;
-        
+
 
 
     }
@@ -223,16 +223,15 @@ li {
         padding-top: 2%;
     }
 
-    
+
     .menulist h3.menulistitle {
         border-bottom: #99E2D0 4px solid;
         width: 4%;
         padding-bottom: 0;
-        
+
     }
 
-    .menulist p
-    {
+    .menulist p {
         padding-top: 2%;
     }
 
@@ -261,13 +260,20 @@ li {
 
     }
 
-    .price
-    {
+    .price {
         padding-top: 3%;
     }
-   
-    .buttoncommand
-    {
+
+    .buttoncommand {
+        padding: 2%;
+    }
+
+    footer h3 {
+        padding-top: 3%;
+        font-size: xx-large;
+    }
+
+    ul {
         padding: 2%;
     }
 
