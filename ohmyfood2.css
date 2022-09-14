@@ -47,13 +47,15 @@ body a {
 
 .menulist {
     font-family: 'Roboto', sans-serif;
-    padding: 0 4% 0 4%;
+    padding: 0 3% 0 3%;
 }
 
 .menulistitle {
     border-bottom: #99E2D0 4px solid;
     width: 15%;
     padding-bottom: 2%;
+    margin: 0 0 1% 0;
+    font-size: 17px;
 
 }
 
@@ -72,13 +74,13 @@ body a {
     font-size: 30px;
 }
 
-.starterstitle,
-.maintitle,
-.dessertitle,
-.texthidden {
-    overflow: hidden;
+.texthidden
+ {
+    /* overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
+    margin-top: 2%;
+   
 
 }
 
@@ -88,8 +90,35 @@ body a {
     padding: 5% 0 5% 0;
 }
 
-.starterscontainer,
-.maindishescontainer,
+
+.starterscontainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-bottom: 4%;
+    padding: 3%;
+    animation: starters_appear 1s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.maindishescontainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-bottom: 4%;
+    padding: 3%;
+    animation: mains_appear 0.5s linear;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
 .dessertscontainer {
     display: flex;
     justify-content: space-between;
@@ -98,34 +127,85 @@ body a {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     margin-bottom: 4%;
     padding: 3%;
+    animation: desserts_appear 0.5s linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    
 }
 
+@keyframes starters_appear
+{
+    0% {
+        opacity: 0%;
+    }
 
+    100% {
+        opacity: 100%;
+        
+    }
 
-
-.starterstitle,
-.maintitle,
-.dessertitle {
-    padding-top: 2%;
 }
 
-.menulist h3 {
-    margin: 0;
-    padding-bottom: 2%;
+@keyframes mains_appear
+{
+    
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        
+    }
+}
+
+@keyframes desserts_appear
+{
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        
+    }
+}
+
+.maintitle h3, .starterstitle h3, .dessertitle h3
+{
+    margin: 0 0 1% 0;
     font-size: 17px;
-
 }
+
+
 
 .menulist p {
-    margin: 0;
-    font-size: 16px;
-    padding-right: 6%;
+    margin:0
+
+    
+    
 }
 
 .price {
-    padding: 11% 5% 0 0;
+    padding: 11% 1% 0 0;
     font-size: 15px;
+    
 }
+
+.select
+{
+    position: absolute;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: xx-large;
+    margin-left: 73%;
+    margin-top: -3%;
+
+}
+    
 
 .command {
     display: flex;

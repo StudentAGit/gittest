@@ -6,7 +6,8 @@
     body a {
         text-decoration: none;
     }
-
+ 
+    
     .loadingspinner {
         display: flex;
         justify-content: center;
@@ -20,7 +21,7 @@
         animation: finish 2.9s;
         animation-delay: 2.5s;
         animation-fill-mode: both;
-       
+
 
     }
 
@@ -37,18 +38,16 @@
 
     }
 
-    @keyframes finish
-    {
-        0%
-        {
-           opacity: 100%;
+    @keyframes finish {
+        0% {
+            opacity: 100%;
         }
-        
-        100%{
+
+        100% {
             opacity: 0%;
             visibility: hidden;
         }
-        
+
     }
 
     @keyframes loading {
@@ -86,7 +85,7 @@
 
         100% {
             opacity: 0;
-            
+
         }
     }
 
@@ -95,7 +94,7 @@
     header {
         display: flex;
         justify-content: center;
-        box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
+        box-shadow: 0px 14px 5px 0px rgba(87, 87, 87, 1);
 
     }
 
@@ -142,8 +141,7 @@
 
     }
 
-    .presentation h2
-    {
+    .presentation h2 {
         text-align: center;
         padding: 10% 15% 0 15%;
         margin: 0%;
@@ -152,12 +150,12 @@
     .presentation p {
         text-align: center;
         padding: 0 2% 0 2%;
-        
+
     }
 
     .presentation a {
         margin: 5% 0 5% 0;
-        
+
     }
 
     .buttonexplore {
@@ -172,9 +170,7 @@
 
     }
 
-    .fonctioning {
-        padding-bottom: 10%;
-    }
+    
 
     .fonctioningtitle h2,
     .restaurants h2 {
@@ -258,7 +254,7 @@
         margin-bottom: 6%;
         position: relative;
         background-color: white;
-        
+
     }
 
     .restaurantlink {
@@ -298,13 +294,59 @@
         font-size: larger;
     }
 
-    .like i {
+    .like {
+        display: flex;
+        justify-content: end;
+    }
+
+
+    .like:active .heartfull {
+        visibility: visible;
+        animation: like_appearance 2s linear;
+        transform-origin: center;
+
+    }
+
+
+    .like:active .heartempty {
+        visibility: hidden;
+    }
+
+    .heartempty {
         display: flex;
         justify-content: end;
         margin-right: 15px;
         margin-top: -50px;
         font-size: 25px;
+        position: relative;
+        visibility: visible;
+        cursor: pointer;
+        
     }
+
+    .heartfull {
+
+        display: flex;
+        justify-content: end;
+        font-size: 25px;
+        position: absolute;
+        margin-top: -50px;
+        margin-right: 15px;
+        visibility: hidden;
+        background: linear-gradient(to top, #9356DC, #FF79DA);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        
+
+    }
+
+    @keyframes likea_appearance
+    {
+
+    }
+
+
+
 
     .caption h3 {
         margin-bottom: 2%;
@@ -345,194 +387,183 @@
     }
 
     /*Version desktop*/
-    @media screen and (min-width: 992px)
-    {
-        header 
-        {
+    @media screen and (min-width: 992px) {
+        header {
             height: 70px;
-            box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
+            box-shadow: 0px 14px 5px 0px rgba(87, 87, 87, 1);
         }
 
-        .place
-        {
+        .place {
             height: 80px;
         }
-        .place i
-        {
+
+        .place i {
             margin-right: 1%
         }
-        .presentation
-        {
+
+        .presentation {
             height: 330px;
         }
 
-        .presentation p
-        {
+        .presentation p {
             padding-top: 1%;
         }
-        
-        .presentation a
-        {
+
+        .presentation a {
             margin: 4% 0 4% 0;
         }
-        .buttonexplore
-        {
+
+        .buttonexplore {
             padding: 2%;
             width: 200px;
         }
 
-        .buttonexplore:hover
-        {
+        .buttonexplore:hover {
             background: linear-gradient(to bottom right, #ff8ddf, #a071da);
             box-shadow: rgba(0, 0, 0, 0.19) 0px 15px 8px, rgba(0, 0, 0, 0.23) 0px 10px 4px;
             transition: .4s;
         }
-        .fonctioning
-        {
+
+        .fonctioning {
             padding-bottom: 0;
-            
+
         }
-        .fonctioninglist
-        {
+
+        .fonctioninglist {
             flex-direction: row;
             justify-content: space-around;
         }
 
-       
-        .restaurants h2,.fonctioningtitle h2
-        {
+
+        .restaurants h2,
+        .fonctioningtitle h2 {
             padding: 3% 0 2% 3%;
         }
-        
-        .restaurantlist
-        {
-           
+
+        .restaurantlist {
+
             flex-direction: row;
             justify-content: space-around;
             padding-bottom: 8%;
         }
-    
-        .restaurantcard
-        {
+
+        .restaurantcard {
             width: 280px;
             height: 250px;
             cursor: pointer;
             transition: .2s;
         }
 
-        .restaurantcard:hover
-        {
+        .restaurantcard:hover {
             transform: scale(1.1);
         }
-    
-        .new
-        {
+
+        
+    .like:hover .heartfull {
+        visibility: visible;
+
+    }
+
+    .like:hover .heartempty {
+        visibility: hidden;
+    }
+        .new {
             margin-bottom: 60%;
             margin-left: 70%;
         }
-    
-        .caption
-        {
+
+        .caption {
             font-size: initial;
         }
-    
-        footer h3
-        {
+
+        footer h3 {
             padding-top: 3%;
             font-size: x-large;
         }
-        ul
-        {
+
+        ul {
             padding: 2%;
-        }  
+        }
     }
 
     /*Version tablette*/
-    @media  screen and (min-width:768px) and (max-width: 991px) 
-    {
-        
-        header
-        {
+    @media screen and (min-width:768px) and (max-width: 991px) {
+
+        header {
             height: 90px;
-            box-shadow: 0px 14px 5px 0px rgba(87,87,87,1);
+            box-shadow: 0px 14px 5px 0px rgba(87, 87, 87, 1);
         }
-        .place
-        {
+
+        .place {
             height: 75px;
         }
-        .place i
-        {
+
+        .place i {
             margin-right: 2%
         }
 
-        .presentation
-        {
+        .presentation {
             padding: 0 3% 0 3%;
         }
 
-        .presentation h2
-        {
+        .presentation h2 {
             padding-top: 9%;
         }
-        .buttonexplore
-        {
+
+        .buttonexplore {
             padding: 3%;
         }
-        .presentation a
-        {
+
+        .presentation a {
             margin: 4% 0 9% 0;
 
         }
-        .fonctioningtitle h2
-        {
+
+        .fonctioningtitle h2 {
             margin: 0;
             padding: 5% 0 2% 4%;
             font-size: x-large;
 
         }
-        .fonctioning
-        {
+
+        .fonctioning {
             padding-bottom: 0;
         }
 
-        .fonctioningchoices
-        {
+        .fonctioningchoices {
             width: 350px;
         }
 
-        .fonctioningchoices h3
-        {
+        .fonctioningchoices h3 {
             padding-left: 4%;
         }
-        .fonctioningchoices i
-        {
+
+        .fonctioningchoices i {
             padding-left: 13%;
         }
-        .restaurants h2
-        {
+
+        .restaurants h2 {
             padding: 5% 0 2% 4%;
             font-size: x-large;
         }
-        .restaurantlist
-        {
+
+        .restaurantlist {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             padding-bottom: 5%;
         }
-        .restaurantcard
-        {
+
+        .restaurantcard {
             margin-bottom: 10%;
         }
 
-        footer h3
-        {
+        footer h3 {
             padding: 3% 0 0 4%;
             font-size: x-large;
         }
-        
-        ul
-        {
+
+        ul {
             padding: 3%;
             font-size: larger;
         }
@@ -540,4 +571,3 @@
 
 
     }
-
