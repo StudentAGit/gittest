@@ -246,6 +246,7 @@ header i {
     padding-bottom: 3%;
     align-self: end;
     font-size: 15px;
+    margin-right: -8px;
     width: 10%;
     transition: 0.5s ease-in-out
     
