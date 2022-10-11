@@ -439,8 +439,8 @@ li {
 
     .starterstitle,
     .mainstitle,
-    .dessertitle,
-    .texthidden {
+    .dessertitle
+    {
         overflow: initial;
         white-space: initial;
         text-overflow: initial;
