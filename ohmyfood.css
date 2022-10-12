@@ -5,9 +5,11 @@
 
     body a {
         text-decoration: none;
+        color: black;
     }
- 
-    
+
+    /* PAGE D'ACCUEIL */
+
     .loadingspinner {
         display: flex;
         justify-content: center;
@@ -86,19 +88,31 @@
         }
     }
 
-
-
     header {
         display: flex;
         justify-content: center;
-        box-shadow: 0px 14px 5px 0px rgba(87, 87, 87, 1);
-
     }
 
     header img {
         width: 180px;
         align-self: center;
         padding: 5% 0 5% 0;
+    }
+
+    header a {
+        position: absolute;
+        margin-left: -83%;
+        align-self: center;
+    }
+
+    header i {
+        font-size: 23px
+    }
+
+    .backgroundimage img {
+        width: 100%;
+        object-fit: cover;
+        height: 285px;
     }
 
     .place {
@@ -119,10 +133,6 @@
         font-weight: 700;
     }
 
-    main h2 {
-        font-size: 23px;
-    }
-
     .presentation {
         display: flex;
         flex-direction: column;
@@ -135,39 +145,38 @@
 
     .presentation p {
         font-size: larger;
-
-    }
-
-    .presentation h2 {
-        text-align: center;
-        padding: 10% 15% 0 15%;
-        margin: 0%;
-    }
-
-    .presentation p {
         text-align: center;
         padding: 0 2% 0 2%;
 
     }
 
-    .presentation a {
-        margin: 5% 0 5% 0;
-
+    .presentation h1 {
+        text-align: center;
+        padding: 10% 15% 0 15%;
+        margin: 0%;
+        font-size: 23px;
     }
 
-    .buttonexplore {
+    .buttonexplore,
+    .buttoncommand {
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         margin: 5% 10% 10% 10%;
         border-radius: 30px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        padding: 5%;
+        padding: 4%;
+        width: 200px;
         color: white;
         border: none;
         text-align: center;
-
+        transition: 0.4s;
     }
 
-    
+
+    .buttoncommand:hover, .buttonexplore:hover {
+        background: linear-gradient(to bottom right, #ff8ddf, #a071da);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 15px 8px, rgba(0, 0, 0, 0.23) 0px 10px 4px;
+
+    }
 
     .fonctioningtitle h2,
     .restaurants h2 {
@@ -290,18 +299,17 @@
         font-size: larger;
     }
 
-    .like
-    {
+    .like {
         position: absolute;
         left: 290px;
         top: 235px;
-        cursor: pointer
+        cursor: pointer;
     }
 
     .heartfull {
 
         font-size: 30px;
-        margin-left: -25px ;
+        margin-left: -25px;
         margin-top: -5px;
         visibility: hidden;
         background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -312,41 +320,40 @@
     .heartempty {
         margin-right: -9px;
         font-size: 30px;
-    }
-
-    .like:hover .heartfull {
-        animation: like_appearance 250ms ease-out;
-        visibility: visible;
         
     }
 
-    .like:hover .heartempty
-    {
+    .like:hover .heartfull, .like2:hover .heartfull {
+        animation: like_appearance 250ms ease-out;
+        visibility: visible;
+
+    }
+
+    .like:hover .heartempty, .like2:hover .heartempty {
         visibility: hidden;
     }
 
-   @keyframes like_appearance
-   {
-        0%{
+    @keyframes like_appearance {
+        0% {
             opacity: 0%;
         }
 
-        30% 
-        {
+        30% {
             opacity: 30%;
         }
-        60%{
+
+        60% {
             opacity: 60%;
         }
 
-        90%
-        {
+        90% {
             opacity: 90%;
         }
-        100%{
+
+        100% {
             opacity: 100%;
         }
-   }
+    }
 
 
 
@@ -388,8 +395,238 @@
         margin-bottom: 1%;
     }
 
+    /* PAGE DES MENUS */
+
+    .like2 {
+        align-self: center;
+        margin-right: 2%;
+        cursor: pointer; 
+    }
+
+
+    .menu {
+        border-radius: 30px 30px 0 0;
+        position: relative;
+        background-color: rgb(244, 244, 244);
+        margin-top: -15%;
+
+    }
+
+    .menulist {
+        font-family: 'Roboto', sans-serif;
+        padding: 0 3% 0 3%;
+        font-size: 16px;
+
+    }
+
+    .menulistitle {
+        border-bottom: #99E2D0 4px solid;
+        width: 15%;
+        padding-bottom: 2%;
+        margin: 0 0 1% 0;
+    }
+
+    .menutitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%
+    }
+
+    .menutitle h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 29px;
+    }
+
+    .starterstitle,
+    .mainstitle,
+    .dessertitle {
+        margin-top: 3px;
+        width: 85%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 3%;
+    }
+
+    .texthidden {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 1%;
+    }
+
+    .starters,
+    .maindishes,
+    .desserts {
+        padding: 5% 0 5% 0;
+    }
+
+
+    .starterscontainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin-bottom: 4%;
+        cursor: pointer;
+        animation: starters_appear 1s linear;
+        animation-delay: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    .maindishescontainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin-bottom: 4%;
+        cursor: pointer;
+        animation: mains_appear 0.5s linear;
+        animation-delay: 1s;
+        animation-fill-mode: both;
+
+    }
+
+    .dessertscontainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin-bottom: 4%;
+        cursor: pointer;
+        animation: desserts_appear 0.5s linear;
+        animation-delay: 1.5s;
+        animation-fill-mode: both;
+
+    }
+
+    @keyframes starters_appear {
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+
+        }
+
+    }
+
+    @keyframes mains_appear {
+
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+
+        }
+    }
+
+    @keyframes desserts_appear {
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+
+        }
+    }
+
+
+    .mainstitle h3,
+    .starterstitle h3,
+    .dessertitle h3 {
+        margin: 0 0 5px 0;
+        font-size: 17px;
+    }
+
+    .menulist p {
+        margin: 0
+    }
+
+    .price {
+        padding-bottom: 3%;
+        align-self: end;
+        font-size: 15px;
+        margin-right: -10px;
+        width: 10%;
+        transition: 0.5s ease-in-out
+    }
+
+    .select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 20px 20px 0;
+        background-color: #99E2D0;
+        color: white;
+        padding: 2%;
+        opacity: 0;
+        transition: 0.4s ease-in;
+        font-size: x-large;
+
+    }
+
+    .select i {
+        transition: 0.4s ease-in;
+
+
+    }
+
+
+    .starterscontainer:hover .select,
+    .maindishescontainer:hover .select,
+    .dessertscontainer:hover .select {
+        width: 5%;
+        padding: 5%;
+        opacity: 100%;
+    }
+
+    .starterscontainer:hover .select i,
+    .maindishescontainer:hover .select i,
+    .dessertscontainer:hover .select i {
+        transform: rotate(360deg);
+    }
+
+    .starterscontainer:hover .price,
+    .maindishescontainer:hover .price,
+    .dessertscontainer:hover .price {
+        width: 10%;
+        margin-right: 20px;
+
+
+    }
+
+    .starterscontainer:hover .starterstitle h3,
+    .maindishescontainer:hover .mainstitle h3,
+    .dessertscontainer:hover .dessertitle h3,
+    .starterscontainer:hover .starterstitle p,
+    .maindishescontainer:hover .mainstitle p,
+    .dessertscontainer:hover .dessertitle p {
+
+        width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .command {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(244, 244, 244);
+    }
+
     /*Version desktop*/
     @media screen and (min-width: 992px) {
+
+        /* PAGE D'ACCUEIL */
+
         header {
             height: 70px;
             box-shadow: 0px 14px 5px 0px rgba(87, 87, 87, 1);
@@ -411,20 +648,11 @@
             padding-top: 1%;
         }
 
-        .presentation a {
-            margin: 4% 0 4% 0;
-        }
-
         .buttonexplore {
             padding: 2%;
             width: 200px;
             transition: .4s;
-        }
-
-        .buttonexplore:hover {
-            background: linear-gradient(to bottom right, #ff8ddf, #a071da);
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 15px 8px, rgba(0, 0, 0, 0.23) 0px 10px 4px;
-            
+            margin: 4% 0 4% 0;
         }
 
         .fonctioning {
@@ -463,32 +691,10 @@
         
         .like
         {
-            left: 0;
-            right: 0;
-            margin: -12% 0 0 83%;
-        }
-        
-        .heartempty
-        {
-            font-size: 26px;
-        }
-        .heartfull
-        {
-            margin-top: -30px;
-            font-size: 26px;
-            margin-left: -21px;
-            visibility: hidden;
-        }
-        
-        .like:hover .heartfull {
-        visibility: visible;
-        animation: like_appearance 0.3s step-end;
-        
+            left: 220px;
+            top: 195px;
         }
 
-        .like:hover .heartempty {
-        visibility: hidden;
-        }
         .new {
             margin-bottom: 60%;
             margin-left: 70%;
@@ -506,10 +712,134 @@
         ul {
             padding: 2%;
         }
+
+        /* PAGE DES MENUS */
+        .menu {
+            margin-top: -2%;
+        }
+
+        .menutitle {
+            padding: 2%;
+            
+        }
+
+        .menutitle h2 {
+            font-size: 32px;
+            margin-left: 2%;
+        }
+
+        .like2
+        {
+            margin-right: 5%;
+        }
+
+        .like2 .heartfull
+        {
+            font-size: 40px;
+            margin-left: -35px;
+        }
+
+        .like2 .heartempty
+        {
+            font-size: 40px;
+        }
+
+        .menulist h3.menulistitle {
+            border-bottom: #99E2D0 4px solid;
+            width: 4%;
+            padding-bottom: 0;
+            font-size: 20px;
+
+        }
+
+
+        .starters,
+        .maindishes,
+        .desserts {
+            padding: 2% 0 2% 0;
+        }
+
+
+        .starterscontainer,
+        .maindishescontainer,
+        .dessertscontainer {
+            height: 100px;
+        }
+
+        .starterstitle,
+        .mainstitle,
+        .dessertitle {
+            overflow: initial;
+            white-space: initial;
+            text-overflow: initial;
+            margin-top: -5px;
+            width: 70%;
+            padding: 2%;
+        }
+
+
+        .starterstitle h3,
+        .mainstitle h3,
+        .dessertitle h3 {
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .menulist p {
+            font-size: 18px;
+        }
+
+        .price {
+            width: 5%;
+            font-size: 20px;
+            padding: 2%;
+            margin-left: 15%;
+        }
+
+        .select {
+            opacity: 0%;
+            font-size: xx-large;
+            padding: 0;
+            width: 5%;
+        }
+
+        .starterscontainer:hover .price,
+        .maindishescontainer:hover .price,
+        .dessertscontainer:hover .price {
+            width: 10%;
+        }
+
+        .starterscontainer:hover .select,
+        .maindishescontainer:hover .select,
+        .dessertscontainer:hover .select {
+            width: 10%;
+            padding: 1%;
+            opacity: 100%;
+
+        }
+
+        .buttoncommand {
+            margin: 0% 5% 7% 5%;
+            padding: 2%;
+        }
+
+        footer h3 {
+            padding: 2% 0 0 2%;
+            font-size: xx-large;
+        }
+
+        ul {
+            padding: 2%;
+        }
+
+
     }
 
-    /*Version tablette*/
+
+    /*VERSION TABLETTE*/
     @media screen and (min-width:768px) and (max-width: 991px) {
+
+        /* PAGE D'ACCUEIL */
 
         header {
             height: 90px;
@@ -534,11 +864,7 @@
 
         .buttonexplore {
             padding: 3%;
-        }
-
-        .presentation a {
             margin: 4% 0 9% 0;
-
         }
 
         .fonctioningtitle h2 {
@@ -579,15 +905,15 @@
         .restaurantcard {
             margin-bottom: 10%;
         }
-         
-        .like
-        {
+
+        .like {
             margin-top: 5px;
         }
-        .heartfull{
+
+        .heartfull {
             visibility: hidden;
         }
-        
+
         footer h3 {
             padding: 3% 0 0 4%;
             font-size: x-large;
@@ -598,6 +924,61 @@
             font-size: larger;
         }
 
+        /* PAGE DES MENUS */
+        
+            .menu {
+                margin-top: -6%;
+            }
 
+            .menutitle h2 {
+                font-size: 32px;
+            }
 
-    }
+            .like2
+            {
+                margin-right: 3%;
+            }
+           
+            .menulistitle {
+                width: 7%;
+                padding-bottom: 1%;
+                font-size: 24px;
+            }
+
+            .starterstitle,
+            .mainstitle,
+            .dessertitle {
+                width: 70%;
+            }
+
+            .starterstitle h3,
+            .mainstitle h3,
+            .dessertitle h3 {
+                font-size: 24px;
+                margin-top: -6px;
+            }
+
+            .menulist p {
+                font-size: 21px;
+
+            }
+
+            .price {
+                padding: 5% 1% 0 0;
+                font-size: 20px;
+                width: 10%;
+                margin: 0% -10% 3% 0;
+            }
+
+            .select {
+                opacity: 0%;
+
+            }
+
+            .buttoncommand {
+                margin: 1% 10% 11% 10%;
+            }
+
+        }
+
+    
