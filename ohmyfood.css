@@ -432,7 +432,7 @@
         padding: 5%
     }
 
-    .menutitle h2 {
+    .menutitle h1 {
         font-family: 'Shrikhand', cursive;
         font-size: 29px;
     }
@@ -723,7 +723,7 @@
             
         }
 
-        .menutitle h2 {
+        .menutitle h1 {
             font-size: 32px;
             margin-left: 2%;
         }
@@ -744,7 +744,7 @@
             font-size: 40px;
         }
 
-        .menulist h3.menulistitle {
+        .menulist h2.menulistitle {
             border-bottom: #99E2D0 4px solid;
             width: 4%;
             padding-bottom: 0;
@@ -858,7 +858,7 @@
             padding: 0 3% 0 3%;
         }
 
-        .presentation h2 {
+        .presentation h1 {
             padding-top: 9%;
         }
 
