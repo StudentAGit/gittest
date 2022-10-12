@@ -616,6 +616,7 @@
         display: flex;
         justify-content: center;
         background-color: rgb(244, 244, 244);
+        padding-bottom: 3%;
     }
 
     /*Version desktop*/
@@ -807,7 +808,7 @@
         }
 
         .buttoncommand {
-            margin: 0% 5% 7% 5%;
+            margin: 0% 5% 3% 5%;
             padding: 2%;
         }
 
@@ -952,10 +953,6 @@
                 font-size: 20px;
                 width: 10%;
                 margin: 0% -10% 3% 0;
-            }
-
-            .buttoncommand {
-                margin: 1% 10% 11% 10%;
             }
 
         }
